@@ -1,0 +1,243 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #232323;
+  font-family: Verdana;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: sticky;
+  z-index: 2;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.topnav a {
+  overflow: hidden;
+  width: 25%;
+  align-items: center;
+  color: #f2f2f2;
+  background-color: #737373;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 100%;
+  border-radius: 0px 0px 20px 20px;
+  height: 100%;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.background_blocks {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+  height: 68px;
+}
+
+.background_blocks div {
+  width: 25%;
+  height: 100%;
+  border-radius: 17px;
+  background-color: #ff3131;
+}
+
+.background_blocks div:nth-child(3) {
+  background-color: #ff914d;
+}
+
+.onderwerpen {
+  font-size: 30px;
+  color: #f2f2f2;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+
+.project,
+.onderwerpen,
+.ontwerpen,
+.goede-doel,
+.game-in-javascript,
+.gamecraft,
+.yard,
+.info {
+  display: flex;
+}
+
+.project {
+  flex-direction: column;
+  width: 100%;
+}
+
+.ontwerpen {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.project .ontwerpen .goede-doel {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.project .ontwerpen .game-in-javascript {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.project .ontwerpen .gamecraft {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.project .ontwerpen .yard {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 600px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 0 2px white;
+  border-radius: 10px;
+}
+
+.project .ontwerpen .goede-doel p {
+  text-align: justify;
+  width: 80%;
+  padding: 5% 10% 5% 0%;
+  font-size: 15px;
+  color: #f2f2f2;
+}
+
+.project .ontwerpen .game-in-javascript p {
+  text-align: justify;
+  width: 80%;
+  padding: 5% 10% 5% 0%;
+  font-size: 15px;
+  color: #f2f2f2;
+}
+
+.project .ontwerpen .gamecraft p {
+  text-align: justify;
+  width: 80%;
+  padding: 5% 10% 5% 0%;
+  font-size: 15px;
+  color: #f2f2f2;
+}
+
+.project .ontwerpen .yard p {
+  text-align: justify;
+  width: 80%;
+  padding: 5% 10% 5% 0%;
+  font-size: 15px;
+  color: #f2f2f2;
+}
+
+.info {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.dateAndButton {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.date {
+  margin-left: 40px;
+  font-weight: 600;
+  padding-right: 0%;
+}
+
+.dateAndButton a {
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  background-color: #396b01;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding-top: 5px;
+  margin-right: 20px;
+}
+
+.ontwerpen > div:nth-child(even) .dateAndButton a {
+  background-color: #7900ff;
+}
+
+@media (max-width: 450px) {
+  .topnav {
+    margin-top: 10px;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .topnav a {
+    width: 90%;
+    border-radius: 20px;
+    height: 40px;
+  }
+
+  .background_blocks {
+    margin-top: 6px;
+    width: 100%;
+    flex-direction: column;
+    gap: 2px;
+    height: 100%;
+    align-items: center;
+  }
+
+  .background_blocks div {
+    width: 95%;
+    height: 68px;
+    border-radius: 20px;
+  }
+
+  img {
+    width: 190px;
+  }
+
+  #info {
+    font-size: 12px;
+  }
+
+  .dateAndButton {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dateAndButton a {
+    width: 90%;
+    margin-right: 0px;
+  }
+
+  .date {
+    padding-top: 0 !important;
+    font-size: 12px;
+  }
+}
